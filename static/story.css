@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3d8f1;
+}
+
+section {
+  border: 3px solid #bf8b85;
+  border-radius: 5px;
+}
+
+h1 {
+  font-family: "Fuzzy Bubbles", cursive;
+  font-size: 40px;
+}
+
+p {
+  font-family: "Fuzzy Bubbles", cursive;
+  padding: 2rem;
+  font-size: 25px;
+}
