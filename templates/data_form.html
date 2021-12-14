@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}MadLibs Info{% endblock %}
+
+{% block content %}
+    <h1>Madlibs</h1>
+    <form action="/story">
+        <label for="place"> Place: 
+            <input type="text" id="place" name="place">
+        </label>
+        <label for="noun"> Noun: 
+            <input type="text" id="noun" name="noun">
+        </label>
+        <label for="verb"> Verb: 
+            <input type="text" id="verb" name="verb">
+        </label>
+        <label for="adjective"> Adjective: 
+            <input type="text" id="adjective" name="adjective">
+        </label>
+        <label for="plural_nun">Plural_noun: 
+            <input type="text" id="plural_nun" name="plural_nun">
+        </label>
+        <button>Submit</button>
+    </form>
+{% endblock %}
