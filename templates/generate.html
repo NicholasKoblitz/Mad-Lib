@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{%block link%} {% endblock %}
+
+{%block content %}
+    <h1>Make your own story!</h1>
+    <section>
+        <p>Write your own Madlib! You can make it about anything that you wish, bnut you must have only one noun, verb, place, adjective, and plural_noun</p>
+        <p>Place words where you would like the added words in {}
+            Example: "We all went to the {place}."
+        </p>
+
+        <form action="/story">
+            <label for="story"> What Is Your Story?</label>
+            <textarea name="story" rows="10" cols="25"></textarea>
+            <label for="place"> Place: 
+                <input type="text" id="place" name="place">
+            </label>
+            <label for="noun"> Noun: 
+                <input type="text" id="noun" name="noun">
+            </label>
+            <label for="verb"> Verb: 
+                <input type="text" id="verb" name="verb">
+            </label>
+            <label for="adjective"> Adjective: 
+                <input type="text" id="adjective" name="adjective">
+            </label>
+            <label for="plural_noun">Plural_noun: 
+                <input type="text" id="plural_noun" name="plural_noun">
+            </label>
+            <button>Submit</button>
+        </form>
+    </section>
+{% endblock %}
