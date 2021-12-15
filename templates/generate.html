@@ -1,18 +1,20 @@
 {% extends 'base.html' %}
 
-{%block link%} {% endblock %}
+{%block link%}rel="stylesheet" href="/static/generate.css" {% endblock %}
+
+{% block title%} Make Your Own Story {% endblock %}
 
 {%block content %}
     <h1>Make your own story!</h1>
     <section>
-        <p>Write your own Madlib! You can make it about anything that you wish, bnut you must have only one noun, verb, place, adjective, and plural_noun</p>
-        <p>Place words where you would like the added words in {}
-            Example: "We all went to the {place}."
+        <p>Write your own Madlib! You can make it about anything that you wish, bnut you must have only one noun, verb, place, adjective, and plural noun</p>
+        <p>Place words where you would like the added words in {}.
         </p>
+        <p><strong>Example:</strong> "We all saw the {adjective} {plural_noun}."</p>
 
         <form action="/story">
             <label for="story"> What Is Your Story?</label>
-            <textarea name="story" rows="10" cols="25"></textarea>
+            <textarea name="story" rows="10" cols="35"></textarea>
             <label for="place"> Place: 
                 <input type="text" id="place" name="place">
             </label>
@@ -25,7 +27,7 @@
             <label for="adjective"> Adjective: 
                 <input type="text" id="adjective" name="adjective">
             </label>
-            <label for="plural_noun">Plural_noun: 
+            <label for="plural_noun">Plural noun: 
                 <input type="text" id="plural_noun" name="plural_noun">
             </label>
             <button>Submit</button>

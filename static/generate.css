@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e3d8f1;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+h1 {
+  font-family: "Fuzzy Bubbles", cursive;
+  font-size: 40px;
+}
+
+p {
+  font-family: "Fuzzy Bubbles", cursive;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  left: 25%;
+  font-family: "Fuzzy Bubbles", cursive;
+  gap: 2rem;
+  border: 5px solid #bf8b85;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  width: 50%;
+}
+
+label {
+  font-size: 30px;
+  position: relative;
+  left: -1rem;
+  font-family: "Fuzzy Bubbles", cursive;
+}
+
+textarea {
+  background-color: #dabeca;
+  color: #524f52;
+  font-family: "Fuzzy Bubbles", cursive;
+}
+
+input {
+  width: 250px;
+  height: 20px;
+  background-color: #dabeca;
+  color: #524f52;
+  font-family: "Fuzzy Bubbles", cursive;
+}
+
+button {
+  display: block;
+  width: 100px;
+  font-size: 18px;
+  background-color: #bf8b85;
+  border-radius: 5px;
+  font-family: "Fuzzy Bubbles", cursive;
+}
+
+button:hover {
+  background-color: #dabeca;
+}
