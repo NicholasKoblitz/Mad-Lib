@@ -57,8 +57,30 @@ label {
 button {
   display: block;
   width: 100px;
-  color: #524f52;
+  font-size: 18px;
   background-color: #bf8b85;
   border-radius: 5px;
   font-family: "Fuzzy Bubbles", cursive;
+}
+
+button:hover {
+  background-color: #dabeca;
+}
+
+#make-story {
+  position: relative;
+  top: 2rem;
+  border: 3px solid #bf8b85;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-family: "Fuzzy Bubbles", cursive;
+  background-color: #bf8b85;
+}
+
+#make-story a {
+  text-decoration: none;
+  color: black;
+}
+#make-story:hover {
+  background-color: #dabeca;
 }
